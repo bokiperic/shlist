@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4BF957D6C094D76CF768ABCC /* Pods_ShlistTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E2857465F966D4899FF6CF /* Pods_ShlistTests.framework */; };
+		5D163808297C8E3F00CC247D /* BaseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D163807297C8E3F00CC247D /* BaseScreen.swift */; };
+		5D33BACB297EAD5800DA18CC /* ShoppingListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D33BACA297EAD5800DA18CC /* ShoppingListScreen.swift */; };
+		5D33BACD297EADA200DA18CC /* ShoppingListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D33BACC297EADA200DA18CC /* ShoppingListTests.swift */; };
 		940DA8C2D3D9BC0B6E161BEF /* Pods_Shlist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAB1F39C810861B1BBC8410 /* Pods_Shlist.framework */; };
 		F60705332441DF6F00F21E45 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60705322441DF6F00F21E45 /* ButtonView.swift */; };
 		F60705352441E2A700F21E45 /* ButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F60705342441E2A700F21E45 /* ButtonView.xib */; };
@@ -382,6 +385,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5D1637FF297C8D5200CC247D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6C067B2243F4D9E00039897 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6C067B9243F4D9E00039897;
+			remoteInfo = Shlist;
+		};
 		F66F2EE32444B3350059741D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F6C067B2243F4D9E00039897 /* Project object */;
@@ -396,6 +406,10 @@
 		3C8168F92B4422EB9A2B4587 /* Pods-Shlist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shlist.release.xcconfig"; path = "Target Support Files/Pods-Shlist/Pods-Shlist.release.xcconfig"; sourceTree = "<group>"; };
 		3FE0F245F46343ABC0FEF724 /* Pods-Shlist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shlist.debug.xcconfig"; path = "Target Support Files/Pods-Shlist/Pods-Shlist.debug.xcconfig"; sourceTree = "<group>"; };
 		4A80EDED6BCE1F75C52F40AE /* Pods-ShlistTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShlistTests.debug.xcconfig"; path = "Target Support Files/Pods-ShlistTests/Pods-ShlistTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5D1637F9297C8D5200CC247D /* ShlistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShlistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D163807297C8E3F00CC247D /* BaseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScreen.swift; sourceTree = "<group>"; tabWidth = 2; };
+		5D33BACA297EAD5800DA18CC /* ShoppingListScreen.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = ShoppingListScreen.swift; sourceTree = "<group>"; tabWidth = 2; };
+		5D33BACC297EADA200DA18CC /* ShoppingListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListTests.swift; sourceTree = "<group>"; usesTabs = 0; };
 		DBAB1F39C810861B1BBC8410 /* Pods_Shlist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shlist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44B7D9BA437C5E08196BEDE /* Pods-ShlistTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShlistTests.release.xcconfig"; path = "Target Support Files/Pods-ShlistTests/Pods-ShlistTests.release.xcconfig"; sourceTree = "<group>"; };
 		F60705322441DF6F00F21E45 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
@@ -822,6 +836,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5D1637F6297C8D5200CC247D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F66F2EDB2444B3350059741D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -843,6 +864,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D1637FA297C8D5200CC247D /* ShlistUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5D163804297C8DB700CC247D /* Screens */,
+				5D163805297C8DC300CC247D /* Tests */,
+				5D163806297C8DD200CC247D /* Utils */,
+			);
+			path = ShlistUITests;
+			sourceTree = "<group>";
+		};
+		5D163804297C8DB700CC247D /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				5D163807297C8E3F00CC247D /* BaseScreen.swift */,
+				5D33BACA297EAD5800DA18CC /* ShoppingListScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		5D163805297C8DC300CC247D /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5D33BACC297EADA200DA18CC /* ShoppingListTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		5D163806297C8DD200CC247D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		B8CC8E83F5E559D2DE835C6B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1618,17 +1673,21 @@
 				F6C067D1243F4DBA00039897 /* Podfile */,
 				F6C067BC243F4D9E00039897 /* Shlist */,
 				F66F2EDF2444B3350059741D /* ShlistTests */,
+				5D1637FA297C8D5200CC247D /* ShlistUITests */,
 				F6C067BB243F4D9E00039897 /* Products */,
 				DA074357789303896AABF809 /* Pods */,
 				B8CC8E83F5E559D2DE835C6B /* Frameworks */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		F6C067BB243F4D9E00039897 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				F6C067BA243F4D9E00039897 /* Shlist.app */,
 				F66F2EDE2444B3350059741D /* ShlistTests.xctest */,
+				5D1637F9297C8D5200CC247D /* ShlistUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1846,6 +1905,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5D1637F8297C8D5200CC247D /* ShlistUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D163803297C8D5200CC247D /* Build configuration list for PBXNativeTarget "ShlistUITests" */;
+			buildPhases = (
+				5D1637F5297C8D5200CC247D /* Sources */,
+				5D1637F6297C8D5200CC247D /* Frameworks */,
+				5D1637F7297C8D5200CC247D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D163800297C8D5200CC247D /* PBXTargetDependency */,
+			);
+			name = ShlistUITests;
+			productName = ShlistUITests;
+			productReference = 5D1637F9297C8D5200CC247D /* ShlistUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		F66F2EDD2444B3350059741D /* ShlistTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F66F2EE52444B3350059741D /* Build configuration list for PBXNativeTarget "ShlistTests" */;
@@ -1896,13 +1973,16 @@
 		F6C067B2243F4D9E00039897 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1140;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Pavel Lyskov";
 				TargetAttributes = {
+					5D1637F8297C8D5200CC247D = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = F6C067B9243F4D9E00039897;
+					};
 					F66F2EDD2444B3350059741D = {
 						CreatedOnToolsVersion = 11.4;
-						TestTargetID = F6C067B9243F4D9E00039897;
 					};
 					F6C067B9243F4D9E00039897 = {
 						CreatedOnToolsVersion = 11.4;
@@ -1929,11 +2009,19 @@
 			targets = (
 				F6C067B9243F4D9E00039897 /* Shlist */,
 				F66F2EDD2444B3350059741D /* ShlistTests */,
+				5D1637F8297C8D5200CC247D /* ShlistUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5D1637F7297C8D5200CC247D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F66F2EDC2444B3350059741D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2185,6 +2273,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5D1637F5297C8D5200CC247D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D33BACD297EADA200DA18CC /* ShoppingListTests.swift in Sources */,
+				5D163808297C8E3F00CC247D /* BaseScreen.swift in Sources */,
+				5D33BACB297EAD5800DA18CC /* ShoppingListScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F66F2EDA2444B3350059741D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2434,6 +2532,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5D163800297C8D5200CC247D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6C067B9243F4D9E00039897 /* Shlist */;
+			targetProxy = 5D1637FF297C8D5200CC247D /* PBXContainerItemProxy */;
+		};
 		F66F2EE42444B3350059741D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F6C067B9243F4D9E00039897 /* Shlist */;
@@ -2654,11 +2757,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5D163801297C8D5200CC247D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.ShlistUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Shlist;
+			};
+			name = Debug;
+		};
+		5D163802297C8D5200CC247D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.ShlistUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Shlist;
+			};
+			name = Release;
+		};
 		F66F2EE62444B3350059741D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4A80EDED6BCE1F75C52F40AE /* Pods-ShlistTests.debug.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LR2T8ARWWC;
 				INFOPLIST_FILE = ShlistTests/Info.plist;
@@ -2671,7 +2811,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shlist.app/Shlist";
 			};
 			name = Debug;
 		};
@@ -2679,7 +2818,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F44B7D9BA437C5E08196BEDE /* Pods-ShlistTests.release.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LR2T8ARWWC;
 				INFOPLIST_FILE = ShlistTests/Info.plist;
@@ -2692,7 +2830,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shlist.app/Shlist";
 			};
 			name = Release;
 		};
@@ -2863,6 +3000,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5D163803297C8D5200CC247D /* Build configuration list for PBXNativeTarget "ShlistUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D163801297C8D5200CC247D /* Debug */,
+				5D163802297C8D5200CC247D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F66F2EE52444B3350059741D /* Build configuration list for PBXNativeTarget "ShlistTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

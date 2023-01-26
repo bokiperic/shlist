@@ -38,6 +38,17 @@
                ReferencedContainer = "container:Shlist.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5D1637F8297C8D5200CC247D"
+               BuildableName = "ShlistUITests.xctest"
+               BlueprintName = "ShlistUITests"
+               ReferencedContainer = "container:Shlist.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
